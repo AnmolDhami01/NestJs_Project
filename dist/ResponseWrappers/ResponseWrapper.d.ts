@@ -1,0 +1,34 @@
+import { UserDto } from 'src/user-module/dto/user.dto';
+import StatusDescription from './StatusDescription';
+import Task from 'src/task-controller/dto/task';
+import { Customer } from 'src/customer/dto/CustomerDto';
+import { Photo } from 'src/models/photo.entity';
+export default class ResponseWrapper {
+    statusDescription: StatusDescription;
+    users: UserDto[];
+    user: UserDto;
+    task: Task;
+    tasks: Task[];
+    customer: Customer;
+    customers: Customer[];
+    photos: Photo[];
+    photo: Photo;
+    getStatusDescription(): StatusDescription;
+    setStatusDescription(statusDescription: StatusDescription): void;
+    getUsers(): UserDto[];
+    setUsers(users: UserDto[]): void;
+    getUser(): UserDto;
+    setUser(user: UserDto): void;
+    getTask(): Task;
+    setTask(task: Task): void;
+    getTasks(): Task[];
+    setTasks(tasks: Task[]): void;
+    getCustomer(): Customer;
+    setCustomer(customer: Customer): void;
+    getCustomers(): Customer[];
+    setCustomers(customers: Customer[]): void;
+    getPhotos(): Photo[];
+    setPhotos(photos: Photo[]): void;
+    getPhoto(): Photo;
+    setPhoto(photo: Photo): void;
+}
